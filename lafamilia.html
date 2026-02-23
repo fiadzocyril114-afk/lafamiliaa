@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="lafamilia.css">
+<title>la familia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+    text-align:center;
+    padding:20px;
+    font-weight:700;
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+/* HERO */
+.hero img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+
+/* PRODUCTS GRID */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:10px;
+    padding:10px;
+}
+
+/* CARD */
+.card{
+    border:1px solid #eee;
+    overflow:hidden;
+    transition:0.1s;
+}
+
+.card:hover{
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* IMAGE CONTAINER */
+.image-container{
+    position:relative;
+    width:100%;
+    height:300px;
+    overflow:hidden;
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:opacity 0.2s ease;
+    object-fit: contain;
+}
+
+/* Second image hidden */
+.image-container img.second{
+    opacity:0;
+}
+
+/* Hover switch */
+.image-container:hover img.second{
+    opacity:1;
+}
+
+.image-container:hover img.first{
+    opacity:0;
+}
+
+/* CARD BODY */
+.card-body{
+    padding:15px;
+    text-align:center;
+}
+
+.card-body h3{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.price{
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+/* BUTTONS */
+.order-btn{
+    display:block;
+    margin:5px 0;
+    padding:8px;
+    text-decoration:none;
+    font-size:12px;
+    border-radius:5px;
+    font-weight:600;
+}
+
+.email-btn{
+    background:black;
+    color:white;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    font-size:12px;
+    border-top:1px solid #eee;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    .hero img{
+        height:50vh;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo-container">
+        <img src="For The Hommies Logo.jpg" alt="For The Hommies Logo">
+        <span>LA FAMILIA</span>
+    </div>
+</div>
+
+<div class="hero">
+    <img src="group 2.jpg">
+</div>
+
+<div class="products">
+
+    <!-- PRODUCT 1 -->
+    <div class="card">
+        <div class="image-container">
+            <img class="first" src="shirt front.jpg">
+            <img class="second" src="shirtback.jpg">
+        </div>
+        <div class="card-body">
+            <h3>Record Tee</h3>
+            <div class="price">GHS 150</div>
+
+            <a class="order-btn email-btn"
+               href="mailto:fiadzocyril114@gmail.com?subject=Order Record Tee&body=Hello, I want to order the Record Tee.">
+               Order via Email
+            </a>
+
+            <a class="order-btn whatsapp-btn"
+               href="https://wa.me/233243735261?text=Hello%20I%20want%20to%20order%20the%20Record%20Tee"
+               target="_blank">
+               Order via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="card">
+        <div class="image-container">
+            <img class="first" src="shirt front.jpg">
+            <img class="second" src="jeans.jpeg">
+        </div>
+        <div class="card-body">
+            <h3>Focus Tee</h3>
+            <div class="price">GHS 350</div>
+
+            <a class="order-btn email-btn"
+               href="mailto:fiadzocyril114@gmail.com?subject=Order Focus Tee&body=Hello, I want to order the Focus Tee.">
+               Order via Email
+            </a>
+
+            <a class="order-btn whatsapp-btn"
+               href="https://wa.me/233243735261?text=Hello%20I%20want%20to%20order%20the%20Focus%20Tee"
+               target="_blank">
+               Order via WhatsApp
+            </a>
+        </div>
+    </div>
+     <!-- PRODUCT 3 -->
+    <div class="card">
+        <div class="image-container">
+            <img class="first" src="jerseryfront.jpeg">
+            <img class="second" src="jerseyback.jpeg">
+        </div>
+        <div class="card-body">
+            <h3>JERSEY</h3>
+            <div class="price">GHS 250</div>
+
+            <a class="order-btn email-btn"
+               href="mailto:fiadzocyril114@gmail.com?subject=Order Record Tee&body=Hello, I want to order the Record Tee.">
+               Order via Email
+            </a>
+
+            <a class="order-btn whatsapp-btn"
+               href="https://wa.me/233243735261?text=Hello%20I%20want%20to%20order%20the%20Record%20Tee"
+               target="_blank">
+               Order via WhatsApp
+            </a>
+        </div>
+    </div>
+      <!-- PRODUCT 3 -->
+    <div class="card">
+        <div class="image-container">
+            <img class="first" src="jerseryfront.jpeg">
+            <img class="second" src="jerseyback.jpeg">
+        </div>
+        <div class="card-body">
+            <h3>JERSEY</h3>
+            <div class="price">GHS 250</div>
+
+            <a class="order-btn email-btn"
+               href="mailto:fiadzocyril114@gmail.com?subject=Order Record Tee&body=Hello, I want to order the Record Tee.">
+               Order via Email
+            </a>
+
+            <a class="order-btn whatsapp-btn"
+               href="https://wa.me/233243735261?text=Hello%20I%20want%20to%20order%20the%20Record%20Tee"
+               target="_blank">
+               Order via WhatsApp
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 LA FAMILIA <br>
+    Contact: fiadzocyril114@gmail.com | 0243735261
+</footer>
+
+</body>
+</html>
